@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('font-family: 'Bubblegum Sans', cursive;');
 @font-face {
 font-family: 'FonteLogo';
-src: url("../project1/curso-html5-css3-gustavo-guanabara-master/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf")  
+src: url('curso-html5-css3-gustavo-guanabara-master/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf')  
 }
 body{
     background-color: white;
@@ -20,7 +20,8 @@ p {
     text-align: justify;
     text-indent: 20px;
     }
-header#cabecalho img#icone {
+/*alinhar icone do oculos a direita*/
+    header#cabecalho img#icone {
     position: absolute;
     left: 950px;
     top: 50px;
@@ -28,7 +29,7 @@ header#cabecalho img#icone {
 header#cabecalho {
 border-bottom: 1px black solid;
 height: 150px;
-background: url("curso-html5-css3-gustavo-guanabara-master/projeto-glass-html5/_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+background: url('curso-html5-css3-gustavo-guanabara-master/projeto-glass-html5/_imagens/glass-logo-peq.jpg') no-repeat 0px 100px;
 }
 header#cabecalho  h1 {
 font-family: "FonteLogo";
@@ -38,7 +39,7 @@ padding: 0px;
 margin-bottom: 0px;
 }
 header#cabecalho  h2 {
-    font-family: 'Titillium Web', sans-serif;;
+    font-family: 'bubblegum-sans-regular', sans-serif;;
     font-size: 15pt;
     color: #888888;
     padding: 0px;
@@ -100,19 +101,30 @@ left: 300px;
  nav#menu li:hover {
      background-color: #606060;
  }
+/* cor de fundo do menu*/
  nav#menu a {
 color: #000000;
 text-decoration: none;
+
  }
  nav#menu a:hover{
      color: #ffffff;
  }
  section#corpo {
      display: block;
-     width: 550px;
+     width: 520px;
      float: left;
      border-right: 1px solid; #606060 ;
      padding-right: 15px;
+    }
+
+article#noticia-principal h2 {
+font-size: 12pt;
+color:white;
+background-color: #888888;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+
 }
 table#tabelaespec {
     border: 1px solid #606060;
@@ -124,11 +136,37 @@ table#tabelaespec td {
     border: 1px solid #606060;
     padding: 10px;
 }
+table#tabelaespec td.ce{
+color: white;
+background-color: #606060;
+vertical-align: top;
+font-weight: bold;
+}
 
+table#tabelaespec td.cd{
+    background-color: #cecece;
+}
+table#tabelaespec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+table#tabelaespec caption span{
+    display:block;
+    float: right;
+    color:black;
+    font-size: 8pt;
+    margin-top: 10px;
+    
+}
  aside#lateral {
     display:block;
-    width: 320px;
+    width: 330px;
     float: right;
+    background-color: #dddd;
+    padding:10px ;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 footer#rodape{
 clear: both;
